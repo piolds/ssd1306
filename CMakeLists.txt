@@ -12,12 +12,12 @@ add_library(
 )
 
 if (NOT TARGET I2C)
-    add_subdirectory (${PROJECT_SOURCE_DIR}/lib/i2c)
+    add_subdirectory (${PROJECT_SOURCE_DIR}/lib/I2C)
 endif()
 
 target_include_directories(
     ${PROJECT_NAME} INTERFACE 
-    ${PROJECT_SOURCE_DIR}/lib/i2c
+    ${PROJECT_SOURCE_DIR}/lib/I2C
 )
 
 target_include_directories(
